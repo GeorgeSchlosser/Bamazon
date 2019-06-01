@@ -1,0 +1,5 @@
+node_modules
+.DS_Store
+.env
+
+# why doesn't .env & .gitignore show in bash when node_modules does?

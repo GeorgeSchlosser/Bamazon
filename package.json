@@ -1,0 +1,29 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "database management app for retail",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeSchlosser/Bamazon.git"
+  },
+  "keywords": [
+    "javascript",
+    "mysql",
+    "node",
+    "inquirer"
+  ],
+  "author": "George Schlosser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgeSchlosser/Bamazon/issues"
+  },
+  "homepage": "https://github.com/GeorgeSchlosser/Bamazon#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "mysql": "^2.17.1"
+  }
+}
