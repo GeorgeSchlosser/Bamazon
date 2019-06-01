@@ -3,3 +3,4 @@ node_modules
 .env
 
 # why doesn't .env & .gitignore show in bash when node_modules does?
+# according to a class mate, this way to encode pw does not work...
