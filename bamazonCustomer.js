@@ -20,19 +20,19 @@ var connection = mysql.createConnection({
   connection.connect(function(err) {
     if (err) throw err;
     console.log("connected as id " + connection.threadId);
-    postConnection();
+    items4Sale();
     // connection.end();
   });
 
 // running app displays all items for sale, including: ids, names, and prices
-function postConnection() {
+function items4Sale() {
     connection.query("SELECT * FROM products", function(err, res) {
       if (err) throw err;
       for (var i = 0; i < res.length; i++) {
         console.log(res[i].item_id + " | " + res[i].product_name + " | " + res[i].price);
       }
     //   console.log(res);
-      connection.end();
+    //   connection.end();
     });
   }
 
@@ -45,3 +45,5 @@ function postConnection() {
     // if enough: fill order:
         // update db quantity
         // log total cost
+
+        // when done hit "ctrl+c" or something similar
