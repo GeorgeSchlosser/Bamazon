@@ -31,9 +31,9 @@ function start() {
       for (var i = 0; i < res.length; i++) {
         console.log(res[i].item_id + " | " + res[i].product_name + " | " + res[i].price);
       }
-    //   console.log(res);
+      console.log(res);
     //   connection.end();
-    });
+    // });
     inquirer
         .prompt([
             {
@@ -51,10 +51,10 @@ function start() {
             {
                 
             }
-            ])
+        ]);
 
-};
-
+    });
+}
 // 2 prompts
 // ask for ID of product they'd like to buy
 
