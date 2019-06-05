@@ -20,12 +20,12 @@ var connection = mysql.createConnection({
   connection.connect(function(err) {
     if (err) throw err;
     console.log("connected as id " + connection.threadId);
-    items4Sale();
+    start();
     // connection.end();
   });
 
 // running app displays all items for sale, including: ids, names, and prices
-function items4Sale() {
+function start() {
     connection.query("SELECT * FROM products", function(err, res) {
       if (err) throw err;
       for (var i = 0; i < res.length; i++) {
@@ -34,10 +34,11 @@ function items4Sale() {
     //   console.log(res);
     //   connection.end();
     });
-  }
+};
 
 // 2 prompts
 // ask for ID of product they'd like to buy
+
 
 // ask for quantity
     // err if not enough: log message & prevent order
