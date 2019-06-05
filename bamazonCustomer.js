@@ -34,6 +34,25 @@ function start() {
     //   console.log(res);
     //   connection.end();
     });
+    inquirer
+        .prompt([
+            {
+                name: "buyItems",
+                type: "rawlist",
+                choices: function() {
+                    var choiceArr = [];
+                    for (var i = 0; i < res.length; i++) {
+                        choiceArr.push(res[i].item_id)
+                    }
+                    return choiceArr;
+                },
+                message: "Choose the ID of the item you would like to buy"
+            },
+            {
+                
+            }
+            ])
+
 };
 
 // 2 prompts
